@@ -4,7 +4,7 @@ import warnings
 import os
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
-save = open(f"{os.path.expandvars(r'%LOCALAPPDATA%/GeometryDash')}/CCGameManager.dat", "r").read()
+save = open(f"{os.path.expandvars(r'%LOCALAPPDATA%/GDPS')}/CCGameManager.dat", "r").read()
 
 def xor(string: str, key: int) -> str:
     return ("").join(chr(ord(char) ^ key) for char in string)
@@ -23,4 +23,5 @@ def getAccountManager():
     return accountManager
 
 # Example: Using the getAccountManager() function.
+
 print(getAccountManager())
